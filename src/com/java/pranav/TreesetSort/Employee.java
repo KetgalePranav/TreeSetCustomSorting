@@ -15,22 +15,9 @@ public class Employee {
 	public Employee() {
 		super();
 	}
-	public int hashCode() {
-	return Objects.hash(id,name,city);
-	}
-	public boolean equals(Object obj) {
-		
-		if(this==obj)
-			return true;
-		if(obj==null)
-			return false;
-		if(this.getClass()!=obj.getClass())
-			return false;
-		Employee other=(Employee)obj;
-		return this.id==other.id && this.name.equals(other.name) && this.city.equals(other.city);
-	}
+
 	public String toString() {
-		return "Employee[name - "+name+",id - "+id+",dept - "+city+"]";
+		return "Employee[name - "+name+",id - "+id+",city - "+city+"]";
 		
 	}
 		
